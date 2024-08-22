@@ -16,7 +16,7 @@ namespace JWT
         private SHA256 sha256 = SHA256.Create();
         private MD5 md5 = MD5.Create();
         private Aes aes = Aes.Create();
-        private X509Certificate2 cert;
+        public X509Certificate2 cert;
 
 
         private byte[] data = Encoding.ASCII.GetBytes("This is my message");
